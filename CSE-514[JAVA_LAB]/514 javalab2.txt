@@ -1,0 +1,34 @@
+import java.awt.*;
+	import java.awt.event.*;
+	public class FwExample {
+		FwExample(){
+			
+	     Frame f=new Frame("Flow Layout");     
+	         f.addWindowListener(new WindowAdapter()
+	         {
+	        	 public void windowClosing(WindowEvent we) {
+	        		 System.exit(0);
+	        	 }
+	         });
+	        
+	         Button btn1 = new Button("India");    
+	         Button btn2 = new Button("Japan");    
+	         Button btn3 = new Button("Pakisthan");   
+	         Button btn4 = new Button("China");    
+	         Button btn5 = new Button("Contries area");  
+	         f.add(btn1);
+	         f.add(btn2);
+	         f.add(btn3);
+	         f.add(btn4);
+	         f.add(btn5);
+	         f.setLayout(new FlowLayout());
+	         f.setLayout(new FlowLayout(FlowLayout.RIGHT));    
+	      
+	         f.setSize(300,300);    
+	         f.setVisible(true);    
+	     }     
+	     public static void main(String args[])   
+	     {    
+	         new FwExample();    
+	     }    
+	     }    

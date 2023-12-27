@@ -1,0 +1,28 @@
+import java.awt.*;
+import java.awt.event.*;
+public class CExample {
+	CExample()
+	{
+		Frame f=new Frame("Card Layout");
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent we)
+			{
+				System.exit(0);
+			}
+		});
+		Button b1=new Button("bvrit");
+		Button b2=new Button("hyderabad");
+		Button b3=new Button("Engineering");
+		f.add(b1);
+		f.add(b2);
+		f.add(b3);
+		f.setLayout(new CardLayout());
+		f.setSize(300,300);
+		f.setVisible(true);
+	}
+	public static void main(String args[])
+	{
+		new CExample();
+	}
+
+}
